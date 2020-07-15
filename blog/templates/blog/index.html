@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="container-blog">
+    <h1>Welcome to Blog Landing Page.</h1>
+    <p>Explore the blog world in your own way. Keep growing yourself by reading blog.</p>
+    <a href="{% url 'blog:blogs' %}" class="btn blog-btn">
+        Read Blogs
+    </a>
+</div>
+{% endblock %}

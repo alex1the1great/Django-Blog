@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<a href="{% url 'blog:index' %}">
+    <i class="fas fa-home" id="home"></i>
+</a>
+    <div class="container">
+        <h1>Blogs</h1>
+        {% for blog in blogs %}
+        <div class="card">
+            <div class="card-title">
+                {{ blog.title }}
+            </div>
+            <div class="card-body">
+                {{ blog.body }}
+            </div>
+            <div class="card-footer">
+                <a href="#">
+                <i class="fas fa-user" style="margin-right: .5em;"></i>{{ blog.user.name}} </a>
+
+                <span>Created: {{ blog.created_at }}</span>
+                <span>Last Updated: {{blog.updated_at}}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

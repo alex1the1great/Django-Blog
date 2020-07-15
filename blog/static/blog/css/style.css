@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .container {
+    width: 60%;
+    margin: auto;
+  }
+
+  .container-blog {
+    width: 80%;
+    margin: auto auto;
+    background-color: rgb(241, 241, 241);
+    height: 50vh;
+    padding: 1.5em 0;
+    margin-top: 1em;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-blog h1 {
+    margin-bottom: .8em;
+    font-size: 4em;
+  }
+
+.container-blog p {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+  }
+
+.btn {
+    padding: 1em 2em;
+    width: 25%;
+    margin-bottom: .8em;
+    color: #fff;
+    background-color: rgb(90, 216, 90);
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.btn:hover {
+    background-color: rgb(76, 197, 76);
+  }
+
+
+/* Blogs */
+
+.container h1 {
+  color: rgb(90, 216, 90);
+}
+
+.card {
+  background-color: rgb(241, 241, 241);
+  padding: 1em 1em;
+  margin-top: 1em;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: 500;
+  padding-bottom: .6em;
+}
+
+.card-body {
+  color: rgb(136, 136, 136);
+  padding-bottom: .6em;
+}
+
+.card-footer {
+  display: flex;
+}
+
+.card-footer  a {
+  text-decoration: none;
+  color: rgb(162, 174, 190);
+}
+
+.card-footer span {
+  margin: 0 1em;
+  font-size: .8em;
+  margin-top: .2em;
+}
+
+
+
+/* Blogs --> */
