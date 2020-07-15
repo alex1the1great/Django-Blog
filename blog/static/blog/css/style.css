@@ -85,7 +85,7 @@
 
 .card-footer  a {
   text-decoration: none;
-  color: rgb(162, 174, 190);
+  color: rgb(67, 143, 243);
 }
 
 .card-footer span {
@@ -94,6 +94,10 @@
   margin-top: .2em;
 }
 
-
+.fa-home {
+  margin-left: 3em;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
 
 /* Blogs --> */
