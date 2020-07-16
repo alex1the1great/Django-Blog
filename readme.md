@@ -1,10 +1,7 @@
-<h1>Landing Page</h1>
-<img src='./readme_img/landing.jpg'>
+<h1>Blog Landing Page</h1>
 
-<h1>Blog Page </h1>
-<img src='./readme_img/blog.jpg'>
+![](readme_img/land.jpg)
 
-```
-pip install - requirements.txt
+<h1>Blog Page</h1>
 
-```
+![](readme_img/blogs.jpg)
