@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .models import Blog
+from .models import Blog, User
 
 
 # index_view
@@ -14,3 +14,14 @@ def blog_view(request):
 
     context = {'blogs': blogs}
     return render(request, 'blog/blogs.html', context=context)
+
+
+def user_blog(request, pk):
+    user_blog = Blog.objects.filter(user_id=pk)
+    user_name = User.objects.filter(id=pk).first()
+
+    context = {
+        'user_blog': user_blog,
+        'user_name': user_name
+    }
+    return render(request, 'blog/user_blog.html', context)

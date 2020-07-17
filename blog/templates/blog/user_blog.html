@@ -5,8 +5,8 @@
     <i class="fas fa-home"></i>
 </a>
     <div class="container">
-        <h1>Blogs</h1>
-        {% for blog in blogs %}
+        <h1>{{ user_name }}</h1>
+        {% for blog in user_blog %}
         <div class="card">
             <div class="card-title">
                 {{ blog.title }}
@@ -15,8 +15,8 @@
                 {{ blog.body }}
             </div>
             <div class="card-footer">
-                <a href="{% url 'blog:user_blog' blog.user_id %}">
-                <i class="fas fa-user" style="margin-right: .5em;"></i>{{ blog.user.name}} </a>
+
+                <i class="fas fa-user" style="margin-right: .5em;"></i>{{ blog.user.name}}
 
                 <span>Created: {{ blog.created_at }}</span>
                 <span>Last Updated: {{blog.updated_at}}</span>
