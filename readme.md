@@ -8,5 +8,5 @@
 
 <h1>All Post By Specific User</h1>
 
-![](readme_img/specific.jpg)
+![](readme_img/specific.JPG)
 
